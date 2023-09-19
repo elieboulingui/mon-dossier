@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="J"></div>
+    <img src="" alt="" srcset="" class=" photo">
+    <script>
+ let a = document.querySelector('img')
+ console.log(a)
+ a.setAttribute("alt", "je suis a la maison")
+ a.classList.add("jesuisalamaison")
+ a.classList.remove('photo')
+ a.classList.replace('jesuisalamaison', 'tuesnul')
+  
+ let titre = 'je suis un titre'
+ let paragraphe = 'je suis un paragraphe'
+ 
+ let contenuTitre = document.createElement("h1")
+ let paragrapheContenu = document.createElement("p")
+ let div = document.createElement("div")
+ contenuTitre =  titre ;
+ paragrapheContenu = paragraphe
+ div.append(contenuTitre);
+ div.append(paragrapheContenu) ;
+ let body = document.querySelector('body')
+ body.append(div)
+    </script>
+</body>
+</html>
